@@ -1,7 +1,12 @@
 import React from "react";
 import progressMenu from "../constants/progress";
 
-const ProgressBar = ({ bgcolor, completed }) => {
+interface ProgressBarProps {
+  bgcolor: string; // Define the type for bgcolor
+  completed: string | number;
+}
+
+const ProgressBar: React.FC<ProgressBarProps> = ({ bgcolor, completed }) => {
   const containerStyles = "h-2 w-full items-center bg-[#2B2B36] rounded-full";
   const fillerStyles = `h-full text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full ${bgcolor}`;
 
@@ -46,9 +51,9 @@ const Section4 = () => {
                 key={item.id}
               >
                 <p className="ml-[17px] lg:ml-[100px]">{item.id}</p>
-                <p className="text-[10px]  mr-[51px]">{item.improvements}</p>
+                <p className="text-[16px]  mr-[51px]">{item.improvements}</p>
                 <ProgressBar bgcolor="bg-green-500" completed={item.progressPercentage}/>
-                <p className="lg:ml-32 text-[10px] lg:text-[28px] border border-[#00CC57] w-fit p-[3px] lg:p-3 rounded-[4px] lg:rounded-xl text-[#00CC57]">+{item.progressPercentage}%</p>
+                <p className="lg:ml-32 text-[10px] lg:text-[16px] border border-[#00CC57] w-fit p-[3px] lg:p-3 rounded-[4px] lg:rounded-xl text-[#00CC57]">+{item.progressPercentage}%</p>
               </div>
             );
           })}
