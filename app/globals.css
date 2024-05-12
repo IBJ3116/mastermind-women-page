@@ -4,17 +4,13 @@
 
 @font-face {
   font-family: 'Clash Display';
-  src: url('/fonts/clash-display.woff2') format('woff2'),
-       url('/fonts/clash-display.woff') format('woff');
-  /* Add other font properties if needed */
+  src: ('./fonts')
 }
 
 @font-face {
   font-family: 'Clash Display Medium';
   font-weight: 500; /* Medium weight */
-  src: url('/fonts/clash-display-medium.woff2') format('woff2'),
-       url('/fonts/clash-display-medium.woff') format('woff');
-  /* Add other font properties if needed */
+  src: ('./fonts')
 }
 
 .clashDisplayFont {
@@ -25,25 +21,13 @@
   font-family: 'Clash Display Medium', sans-serif;
 }
 
+/* Set background to black and font color to white */
+body {
+  background-color: black;
+  color: white;
+}
 
-/* #Herotitle {
-  font-size: 96px;
-  margin-top: 100px;
-  padding: 0%;
-  line-height: normal;
-} */
-
-/* #section2head {
-  font-size: 64px;
-  font-weight: bold;
-  text-align: left;
-} */
-
-/* #section2p {
-  font-size: 22px;
-  text-align: left;
-} */
-
+/* Additional styles */
 #name {
   font-family: fraunces;
   font-style: italic;
@@ -54,21 +38,12 @@ p {
 }
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 255, 255, 255; /* White */
+  --background-start-rgb: 0, 0, 0; /* Black */
+  --background-end-rgb: 0, 0, 0; /* Black */
 }
 
 body {
-  /* overflow-x: hidden; */
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
