@@ -29,8 +29,8 @@ body {
 
 /* Additional styles */
 #name {
-  font-family: Fraunces, sans-serif;
-  font-style: italic;
+  font-family: 'Fraunces', sans-serif;
+  font-style: italic; /* If needed */
 }
 
 p {
