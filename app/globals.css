@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: 'Clash Display Medium';
+  font-family: 'ClashDisplay-Medium';
   font-weight: 500; /* Medium weight */
   src: ('./fonts')
 }
@@ -18,7 +18,7 @@
 }
 
 .clashDisplayMediumFont {
-  font-family: 'Clash Display Medium', sans-serif;
+  font-family: 'ClashDisplay-Medium', sans-serif;
 }
 
 /* Set background to black and font color to white */
@@ -29,7 +29,7 @@ body {
 
 /* Additional styles */
 #name {
-  font-family: fraunces, sans-serif;
+  font-family: Fraunces, sans-serif;
   font-style: italic;
 }
 
@@ -37,6 +37,10 @@ p {
   font-family: archivo, sans-serif;
 }
 
+#Herotitle {
+  font-family: 'ClashDisplay-Medium', sans-serif;
+  font-style: normal;
+}
 
 :root {
   --foreground-rgb: 255, 255, 255; /* White */
@@ -59,3 +63,16 @@ body {
     text-wrap: balance;
   }
 }
+
+
+
+
+
+/* # Stage your changes
+git add .
+
+# Commit your changes with a descriptive message
+git commit -m "Your commit message"
+
+# Push your changes to GitHub
+git push origin main */
