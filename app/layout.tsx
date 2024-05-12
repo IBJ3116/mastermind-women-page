@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Archivo } from "next/font/google";
+import { Archivo, Fraunces, Bricolage_Grotesque  } from 'next/font/google';
 import "./globals.css";
-import { Fraunces } from "next/font/google";
 
 const inter = Archivo({ subsets: ["latin"] });
 

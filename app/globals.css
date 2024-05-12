@@ -3,22 +3,29 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Clash Display';
-  src: ('./fonts')
+  font-family: "Clash Display";
+  src: ("./fonts");
 }
 
 @font-face {
-  font-family: 'ClashDisplay-Medium';
+  font-family: "ClashDisplay-Medium";
   font-weight: 500; /* Medium weight */
-  src: ('./fonts')
+  src: ("./fonts");
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/fonts/bricolage-grotesque.woff2") format("woff2"),
+    url("/fonts/bricolage-grotesque.woff") format("woff");
+  /* Add other font properties if needed */
 }
 
 .clashDisplayFont {
-  font-family: 'Clash Display', sans-serif;
+  font-family: "Clash Display", sans-serif;
 }
 
 .clashDisplayMediumFont {
-  font-family: 'ClashDisplay-Medium', sans-serif;
+  font-family: "ClashDisplay-Medium", sans-serif;
 }
 
 /* Set background to black and font color to white */
@@ -29,8 +36,12 @@ body {
 
 /* Additional styles */
 #name {
-  font-family: 'Fraunces', sans-serif;
-  font-style: italic; /* If needed */
+  font-family: "Fraunces", sans-serif;
+  font-style: italic;
+}
+
+.Fraunces {
+  font-family: "Fraunces", sans-serif;
 }
 
 p {
@@ -38,8 +49,9 @@ p {
 }
 
 #Herotitle {
-  font-family: 'ClashDisplay-Medium', sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   font-style: normal;
+  font-weight: 600;
 }
 
 :root {
@@ -63,10 +75,6 @@ body {
     text-wrap: balance;
   }
 }
-
-
-
-
 
 /* # Stage your changes
 git add .
