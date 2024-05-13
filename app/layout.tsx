@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Archivo, Fraunces, Bricolage_Grotesque  } from 'next/font/google';
+import { Archivo, Fraunces, Bricolage_Grotesque } from 'next/font/google';
 import "./globals.css";
 
-const inter = Archivo({ subsets: ["latin"] });
+// Call and assign font loaders to consts in the module scope
+const archivo = Archivo({ subsets: ["latin"] });
+const fraunces = Fraunces({ subsets: ["latin"] });
+const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Mastermind Women and Children",
@@ -16,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={archivo.className}>{children}</body>
     </html>
   );
 }
