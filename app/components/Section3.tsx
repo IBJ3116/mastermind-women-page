@@ -18,9 +18,9 @@ const Section3 = () => {
               id="secondheading"
               className="text-[32px] lg:text-[64px] mb-[20px] font-semibold">
               <span id="name" className="font-fraunces">
-                I’m Debra,
+                I’m Debra
               </span>
-              34 years old, Mother of Two
+              , 34 years old, Mother of Two
             </h1>
           </div>
 

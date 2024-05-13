@@ -36,7 +36,7 @@ body {
 
 /* Additional styles */
 #name {
-  font-family: "Fraunces", sans-serif;
+  font-family: fraunces, sans-serif;
   font-style: italic;
 }
 
