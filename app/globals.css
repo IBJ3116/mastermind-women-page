@@ -48,11 +48,11 @@ p {
   font-family: archivo, sans-serif;
 }
 
-#Herotitle {
-  font-family: "Bricolage Grotesque", sans-serif;
+/* #Herotitle {
+  font-family: "ClashDisplay-Medium", sans-serif;
   font-style: normal;
-  font-weight: 600;
-}
+  font-weight: 500;
+} */
 
 :root {
   --foreground-rgb: 255, 255, 255; /* White */

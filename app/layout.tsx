@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Archivo, Fraunces, Bricolage_Grotesque } from 'next/font/google';
 import "./globals.css";
 
-// Call and assign font loaders to consts in the module scope
+
 const archivo = Archivo({ subsets: ["latin"] });
 const fraunces = Fraunces({ subsets: ["latin"] });
 const bricolage = Bricolage_Grotesque({ subsets: ["latin"] });

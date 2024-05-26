@@ -12,8 +12,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ bgcolor, completed }) => {
 
   return (
     <div className={containerStyles}>
-      <div style={{ width: `${completed}%` }} className={fillerStyles}>
-      </div>
+      <div style={{ width: `${completed}%` }} className={fillerStyles}></div>
     </div>
   );
 };
@@ -38,7 +37,9 @@ const Section4 = () => {
       <div className="flex flex-col w-full">
         {/* Table header */}
         <div className=" p-2 font-bold grid grid-cols-4 justify-evenly lg:gap-[28px] gap-[51px] mb-6 text-[#87888C]">
-          <p className="ml-[17px] lg:ml-[100px] text-[12px] lg:text-[22px]">#</p>
+          <p className="ml-[17px] lg:ml-[100px] text-[12px] lg:text-[22px]">
+            #
+          </p>
           <p className="text-[12px] lg:text-[22px]">Improvements</p>
           <p className="text-[12px] lg:text-[22px]">Progress</p>
           <p className="lg:ml-32 text-[12px] lg:text-[22px]">%</p>
@@ -52,8 +53,13 @@ const Section4 = () => {
               >
                 <p className="ml-[17px] lg:ml-[100px]">{item.id}</p>
                 <p className="text-[16px]  mr-[51px]">{item.improvements}</p>
-                <ProgressBar bgcolor="bg-green-500" completed={item.progressPercentage}/>
-                <p className="lg:ml-32 text-[10px] lg:text-[16px] border border-[#00CC57] w-fit p-[3px] lg:p-3 rounded-[4px] lg:rounded-xl text-[#00CC57]">+{item.progressPercentage}%</p>
+                <ProgressBar
+                  bgcolor="bg-green-500"
+                  completed={item.progressPercentage}
+                />
+                <p className="lg:ml-32 text-[10px] lg:text-[16px] border border-[#00CC57] w-fit p-[3px] lg:p-3 rounded-[4px] lg:rounded-xl text-[#00CC57]">
+                  +{item.progressPercentage}%
+                </p>
               </div>
             );
           })}
