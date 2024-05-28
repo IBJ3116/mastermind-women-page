@@ -2,16 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Clash Display";
-  src: ("./fonts");
-}
-
-@font-face {
-  font-family: "ClashDisplay-Medium";
-  font-weight: 500; /* Medium weight */
-  src: ("./fonts");
-}
 
 @font-face {
   font-family: "Bricolage Grotesque";

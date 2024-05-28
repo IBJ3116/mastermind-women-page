@@ -6,7 +6,7 @@ import { menuImg } from "@/public/assets";
 
 const Navbar = () => {
   return (
-    <nav className="relative z-10 w-full top-0">
+    <nav className="fixed z-10 w-full top-0">
       <div className="flex justify-between items-center py-4 px-4 lg:px-8 bg-black/60 backdrop-blur-sm h-[80px]">
         <div className="flex-shrink-0 mr-4 lg:mr-0">
           <Image
