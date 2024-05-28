@@ -38,10 +38,10 @@ const Section2 = () => {
               experienced domestic violence (samhsa.gov, 2023). Violence,
               starvation, women’s health and wellness, and children’s mental and
               physical health are all important issues that affect the future of
-              this special population. Our team consists of a double
-              board-certified child psychiatrist, a female case manager, and a
-              female recovery coach who will have direct access in the oversight
-              of specialized women and children’s needs.
+              this special population. Our team consists of a board-certified
+              child psychiatrist, a female case manager, and a female recovery
+              coach who will have direct access in the oversight of specialized
+              women and children’s needs.
             </p>
           </div>
 

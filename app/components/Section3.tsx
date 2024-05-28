@@ -1,6 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import { happymotherandchild } from "@/public/assets";
+import { Fraunces } from "next/font/google";
+
+const fraunces = Fraunces ({
+  subsets: ["latin"],
+})
 
 const Section3 = () => {
   return (
@@ -16,8 +21,9 @@ const Section3 = () => {
           <div>
             <h1
               id="secondheading"
-              className="text-[32px] lg:text-[64px] mb-[20px] font-semibold">
-              <span id="name" className="font-fraunces">
+              className="text-[32px] lg:text-[64px] mb-[20px] font-semibold"
+            >
+              <span id="name" className={`${fraunces.className}`}>
                 I’m Debra
               </span>
               , 34 years old, Mother of Two
@@ -27,7 +33,7 @@ const Section3 = () => {
           <div>
             <p className="text-[14px] max-w-[352px] mx-auto lg:text-[24px] mb-[30px] lg:mb-[120px] lg:max-w-[1024px]">
               “I was in a severe depressive state before I received help from
-              Mastermind recovery and out of work for over a year. With their
+              Mastermind Recovery and out of work for over a year. With their
               help my depression has not been as bad. My mental health has been
               a lot better than what it was and moving to San Antonio and
               getting help from Mastermind was the best decisions for us!”

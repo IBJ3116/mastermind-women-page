@@ -27,7 +27,7 @@ const Section4 = () => {
           Progress
         </h1>
         <p className="max-w-[352px] mx-auto mt-[20px] text-[14px] lg:text-[24px] lg:max-w-[1024px]">
-          Debra has been receiving follow up care from MMR for 6 months now.
+          Debra has been receiving follow up care from MMR for over 6 months now.
           Debras extensive evaluation results done (in 90 day increments) by our
           case managers and overseen by our double board certified psychiatrist
           are below:

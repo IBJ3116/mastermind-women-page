@@ -10,7 +10,7 @@ const bricolage = Bricolage_Grotesque({
 
 const Hero = () => {
   return (
-    <main className='relative items-center h-full w-full mt-[112px] lg:ml-[180px] lg:max-w-[1000px] lg:mt-[100px] pl-[32px]'>
+    <main className='relative items-center h-full w-full mt-[112px] lg:ml-[100px] lg:max-w-[900px] lg:mt-[100px]'>
       <h1 id='Herotitle' className={`${bricolage.className} lg:text-[100px] leading-[115%] w-full lg:max-w-[940px] text-[48px] font-bold`}>
         Empowering <span className='text-[#00CC57] lg:max-w-[864px] w-fit'>Women & Children</span>
       </h1>
