@@ -4,7 +4,7 @@ import sponsortable from "../constants/sponsor";
 
 const Sponsor = () => {
   return (
-    <main className="mx-auto w-full mt-[120px]">
+    <main className="mx-auto w-full mt-[80px]">
       <div className="text-center">
         <h1 className="mx-auto text-[32px] lg:text-[64px] font-bold leading-none lg:max-w-[1028px]">
           Be A Sponsor
