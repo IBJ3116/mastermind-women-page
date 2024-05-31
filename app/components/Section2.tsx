@@ -38,10 +38,11 @@ const Section2 = () => {
               experienced domestic violence (samhsa.gov, 2023). Violence,
               starvation, women’s health and wellness, and children’s mental and
               physical health are all important issues that affect the future of
-              this special population. Our team consists of a board-certified
-              child psychiatrist, a female case manager, and a female recovery
-              coach who will have direct access in the oversight of specialized
-              women and children’s needs.
+              this special population. Our growing team currently consists of a
+              board-certified child psychiatrist, a female case manager, and a
+              female recovery coach. They work together to create a unique
+              program that aims to meet the specialized needs of the women and
+              children at MMR.
             </p>
           </div>
 
@@ -87,9 +88,10 @@ const Section2 = () => {
               Transitional Housing for Women and Children
             </h1>
             <p className="text-[14px] mx-auto lg:text-[22px] leading-normal mb-4 max-w-[352px] lg:max-w-[635px]">
-              In 2024 MMR will be opening a women and children’s transitional
-              housing facility where women in recovery can receive a chance to
-              raise their children in a home of safety, serenity and sobriety.
+              In 2024, MMR will be opening a transitional living house for Women
+              and their Children. This unique house provides women in recovery a
+              chance to raise their children in a safe, serene and supervised
+              sober environment.
             </p>
           </div>
           <div className="lg:w-[195px] lg:h-[74px] w-[121px] h-[45px] rounded-full bg-green-500 flex items-center justify-center mb-22">

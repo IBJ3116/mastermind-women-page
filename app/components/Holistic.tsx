@@ -13,7 +13,7 @@ const Holistic = () => {
         <p className="max-w-[352px] lg:max-w-[1181px] mx-auto text-[14px] lg:text-[24px] mt-[20px]">
           Mastermind is committed to the quality care of women and children, and
           we want to see other women and children experience positive
-          self-growth in all areas of life. Although Mastermind is faith based,
+          self-growth in all areas of life. Although Mastermind is faith-based,
           we do offer a purely secular track for all other services excluding
           spiritual. Spiritual services are there for those who choose to use
           them, but they are not a requirement to be approved for our women and

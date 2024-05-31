@@ -13,7 +13,7 @@ const Section3 = () => {
       <div className="text-center gap-11">
         <div>
           <h1 className="text-[20px] lg:text-[48px] my-120px  font-semibold mb-[20px]">
-            Testimonials
+            TESTIMONIAL
           </h1>
         </div>
 
