@@ -24,33 +24,33 @@ const Sponsor = () => {
           <p className="lg:text-[24px] text-[14px]">Donate Now</p>
         </div>
 
-        <div className="flex flex-col w-full mx-auto mt-[120px]">
+        <div className="mx-auto flex flex-col w-full mt-[120px]">
           {/* Table header */}
-          <div className="p-2 font-bold grid grid-cols-3 lg:gap-[28px] gap-[51px] mb-[50px] text-[#87888C] items-center">
-            <p className="text-left text-[16px] lg:text-[24px] lg:ml-[200px] ml-[30px]">
+          <div className="font-bold grid grid-cols-3 lg:gap-[28px] gap-[20px] mb-[30px] text-[#87888C] items-center">
+            <p className="text-left lg:text-center text-[12px] lg:text-[22px]">
               #
             </p>
-            <p className="text-left text-[16px] lg:text-[24px] lg:ml-[50px] ml-[30px]">
+            <p className="text-left lg:text-center text-[12px] lg:text-[22px]">
               Items
             </p>
-            <p className="text-left text-[16px] lg:text-[24px] lg:ml-[50px] ml-[30px]">
+            <p className="text-left lg:text-center text-[12px] lg:text-[22px]">
               Cost
             </p>
           </div>
 
-          <div className="mx-auto">
+          <div className="mx-auto w-full">
             {sponsortable.map((item) => (
               <div
-                className="p-[20px] font-bold grid grid-cols-3 items-center justify-center lg:gap-[28px] gap-[51px] mb-4"
+                className="p-[20px] font-bold grid grid-cols-3 items-center justify-center lg:gap-[28px] gap-[20px] mb-4"
                 key={item.id}
               >
-                <p className="text-left ml-[17px] lg:ml-[100px] text-[14px] lg:text-[18px]">
+                <p className="text-left lg:text-center text-[14px] lg:text-[18px]">
                   {item.id}
                 </p>
-                <p className="text-left text-[14px] lg:text-[18px]">
+                <p className="text-left lg:text-center text-[14px] lg:text-[18px]">
                   {item.item}
                 </p>
-                <p className="text-left ml-[17px] lg:ml-[100px] text-[#00CC57] text-[14px] lg:text-[18px]">
+                <p className="text-left lg:text-center text-[#00CC57] text-[14px] lg:text-[18px]">
                   {item.cost}
                 </p>
               </div>

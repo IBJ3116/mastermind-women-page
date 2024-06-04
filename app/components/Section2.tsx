@@ -5,12 +5,11 @@ import Image from "next/image";
 const Section2 = () => {
   return (
     <main className="relative mt-[140px] mx-auto max-w-[352px] lg:max-w-[1301px] lg:px-4">
-      {" "}
-      {/* Adjust the top margin to shift the section downwards */}
+      {/* Section 1 */}
       <div className="lg:flex mx-auto lg:mx-auto">
         <div className="lg:w-1/2 flex flex-col justify-center">
           <div className="block lg:hidden w-[352px] lg:w-[614px]">
-            {/* Adjust the width as needed */}
+            {/* Image for mobile view */}
             <div className="relative w-[355px] lg:w-full h-[331px] mb-3 lg:h-[572px] rounded-3xl overflow-hidden">
               <Image
                 src={section2img}
@@ -20,10 +19,9 @@ const Section2 = () => {
               />
             </div>
           </div>
-          <div className="mb-[20px]">
-            {/* Add margin-bottom to create space */}
+          <div className="mb-[20px] lg:mb-[40px]"> {/* Adjust margin-bottom as needed */}
             <h1
-              className="text-[32px] lg:text-[64px] max-w-[372] lg:max-w-[642px] text-start font-bold mb-4"
+              className="text-[32px] lg:text-[64px] max-w-[372px] lg:max-w-[800px] text-start font-bold mb-4"
               id="section2head"
               style={{ lineHeight: "109%" }}
             >
@@ -47,14 +45,12 @@ const Section2 = () => {
           </div>
 
           <div className="lg:w-[195px] lg:h-[74px] w-[121px] h-[45px] rounded-full bg-green-500 flex items-center justify-center mb-22">
-            {" "}
-            {/* Add margin-bottom to create space */}
             <p className="text-[14px] lg:text-2xl">Apply Now</p>
           </div>
         </div>
         <div className="lg:flex hidden w-[614px]">
-          {/* Adjust the width as needed */}
-          <div className="relative w-full h-[572px] rounded-3xl overflow-hidden">
+          {/* Image for desktop view */}
+          <div className="relative w-full h-[572px] rounded-3xl overflow-hidden lg:ml-[20px]"> {/* Adjust margin-left as needed */}
             <Image
               src={section2img}
               alt="Section 2"
@@ -64,9 +60,10 @@ const Section2 = () => {
           </div>
         </div>
       </div>
+      {/* Section 2 */}
       <div className="block lg:flex mx-auto mt-[140px]">
         <div className="block w-[352px] lg:w-[614px]">
-          {/* Adjust the width as needed */}
+          {/* Image for mobile and desktop view */}
           <div className="relative w-[355px] lg:w-full h-[331px] mb-3 lg:h-[572px] rounded-3xl overflow-hidden">
             <Image
               src={transitionalhousing}
@@ -76,12 +73,10 @@ const Section2 = () => {
             />
           </div>
         </div>
-        <div className="lg:w-1/2 flex flex-col justify-center lg:ml-[45px]">
-          <div className="mb-[20px]">
-            {" "}
-            {/* Add margin-bottom to create space */}
+        <div className="lg:w-1/2 flex flex-col justify-center lg:ml-[60px] lg:pl-[20px]"> {/* Adjust margin-left and padding-left as needed */}
+          <div className="mb-[20px] lg:mb-[40px]"> {/* Adjust margin-bottom as needed */}
             <h1
-              className="text-[32px] lg:text-[64px] max-w-[362px] lg:max-w-[642px] text-start font-bold mb-4"
+              className="text-[32px] lg:text-[64px] max-w-[362px] lg:max-w-[852px] text-start font-bold mb-4"
               id="section2head"
               style={{ lineHeight: "109%" }}
             >
@@ -95,8 +90,6 @@ const Section2 = () => {
             </p>
           </div>
           <div className="lg:w-[195px] lg:h-[74px] w-[121px] h-[45px] rounded-full bg-green-500 flex items-center justify-center mb-22">
-            {" "}
-            {/* Add margin-bottom to create space */}
             <p className="text-[14px] lg:text-2xl">Apply Now</p>
           </div>
         </div>
