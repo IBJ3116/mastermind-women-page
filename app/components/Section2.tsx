@@ -1,12 +1,21 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import { section2img, transitionalhousing } from "@/public/assets";
 import Image from "next/image";
+import { useGsapAnimations } from "../constants/hooks/useGsapAnimations";
 
-const Section2 = () => {
+const Section2: React.FC = () => {
+  const sectionRef1 = useRef<HTMLDivElement>(null);
+  const sectionRef2 = useRef<HTMLDivElement>(null);
+
+  useGsapAnimations(".section2-element-1");
+  useGsapAnimations(".section2-element-2");
+
   return (
     <main className="relative mt-[140px] mx-auto max-w-[352px] lg:max-w-[1301px] lg:px-4">
       {/* Section 1 */}
-      <div className="lg:flex mx-auto lg:mx-auto">
+      <div ref={sectionRef1} className="lg:flex mx-auto lg:mx-auto section2-element-1">
         <div className="lg:w-1/2 flex flex-col justify-center">
           <div className="block lg:hidden w-[352px] lg:w-[614px]">
             {/* Image for mobile view */}
@@ -61,7 +70,7 @@ const Section2 = () => {
         </div>
       </div>
       {/* Section 2 */}
-      <div className="block lg:flex mx-auto mt-[140px]">
+      <div ref={sectionRef2} className="block lg:flex mx-auto mt-[140px] section2-element-2">
         <div className="block w-[352px] lg:w-[614px]">
           {/* Image for mobile and desktop view */}
           <div className="relative w-[355px] lg:w-full h-[331px] mb-3 lg:h-[572px] rounded-3xl overflow-hidden">
