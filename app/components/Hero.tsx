@@ -25,6 +25,30 @@ const Hero: React.FC = () => {
     }
   }, []);
 
+  useEffect(() => {
+    if (heroButtonRef.current) {
+      const button = heroButtonRef.current;
+      gsap.set(button, { boxShadow: '0 0 0px #00CC57' });
+
+      button.addEventListener('mouseenter', () => {
+        gsap.to(button, { boxShadow: '0 0 20px #00CC57', duration: 0.3 });
+      });
+
+      button.addEventListener('mouseleave', () => {
+        gsap.to(button, { boxShadow: '0 0 0px #00CC57', duration: 0.3 });
+      });
+
+      return () => {
+        button.removeEventListener('mouseenter', () => {
+          gsap.to(button, { boxShadow: '0 0 20px #00CC57', duration: 0.3 });
+        });
+        button.removeEventListener('mouseleave', () => {
+          gsap.to(button, { boxShadow: '0 0 0px #00CC57', duration: 0.3 });
+        });
+      };
+    }
+  }, []);
+
   return (
     <main className='relative items-center h-full mt-[112px] ml-[50px] lg:ml-[130px] lg:max-w-[900px] lg:mt-[130px]'>
       <h1

@@ -1,14 +1,44 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { happymotherandchild } from "@/public/assets";
 import styled from "styled-components";
+import { gsap } from "gsap";
 
 const ItalicText = styled.span`
   font-style: italic;
 `;
+
 const Section3 = () => {
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const paragraphRef = useRef<HTMLParagraphElement>(null);
+  const imageRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      defaults: { duration: 1, ease: 'power3.out' },
+    });
+
+    tl.fromTo(
+      headingRef.current,
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0 }
+    )
+      .fromTo(
+        paragraphRef.current,
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0 },
+        '-=0.5'
+      )
+      .fromTo(
+        imageRef.current,
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0 },
+        '-=0.5'
+      );
+  }, []);
+
   return (
     <main className="mt-[120px]">
       <div className="text-center gap-11">
@@ -23,6 +53,7 @@ const Section3 = () => {
             <h1
               id="secondheading"
               className="text-[32px] lg:text-[64px] mb-[20px] font-semibold"
+              ref={headingRef}
             >
               <ItalicText id="name">I’m Debra</ItalicText>, 34 years old, Mother
               of Two
@@ -30,7 +61,10 @@ const Section3 = () => {
           </div>
 
           <div>
-            <p className="text-[14px] max-w-[352px] mx-auto lg:text-[24px] mb-[30px] lg:mb-[120px] lg:max-w-[1024px]">
+            <p
+              className="text-[14px] max-w-[352px] mx-auto lg:text-[24px] mb-[30px] lg:mb-[120px] lg:max-w-[1024px]"
+              ref={paragraphRef}
+            >
               “I was in a severe depressive state before I received help from
               Mastermind Recovery and out of work for over a year. With their
               help my depression has not been as bad. My mental health has been
@@ -40,12 +74,15 @@ const Section3 = () => {
           </div>
         </div>
 
-        <div className="relative mx-auto max-w-[352px] lg:max-w-[1300px]">
-          <div className="rounded-xl  overflow-hidden lg:h-[418px] lg:object-contain ">
+        <div
+          className="relative mx-auto max-w-[352px] lg:max-w-[1300px]"
+          ref={imageRef}
+        >
+          <div className="rounded-xl overflow-hidden lg:h-[418px] lg:object-contain">
             <Image
               src={happymotherandchild}
               alt="happy mother and child"
-              className="rounded-xl lg:object-cover inset-full "
+              className="rounded-xl lg:object-cover inset-full"
             />
           </div>
         </div>
