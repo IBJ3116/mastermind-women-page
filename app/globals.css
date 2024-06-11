@@ -25,8 +25,12 @@ body {
 }
 
 /* Additional styles */
-#name {
+/* #name {
   font-family: fraunces, sans-serif;
+  font-style: italic;
+} */
+
+.italicText {
   font-style: italic;
 }
 

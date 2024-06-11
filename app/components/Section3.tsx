@@ -1,12 +1,13 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { happymotherandchild } from "@/public/assets";
-import { Fraunces } from "next/font/google";
+import styled from "styled-components";
 
-const fraunces = Fraunces ({
-  subsets: ["latin"],
-})
-
+const ItalicText = styled.span`
+  font-style: italic;
+`;
 const Section3 = () => {
   return (
     <main className="mt-[120px]">
@@ -23,10 +24,8 @@ const Section3 = () => {
               id="secondheading"
               className="text-[32px] lg:text-[64px] mb-[20px] font-semibold"
             >
-              <span id="name" className={`${fraunces.className}`}>
-                I’m Debra
-              </span>
-              , 34 years old, Mother of Two
+              <ItalicText id="name">I’m Debra</ItalicText>, 34 years old, Mother
+              of Two
             </h1>
           </div>
 
