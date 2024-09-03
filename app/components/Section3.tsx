@@ -43,7 +43,7 @@ const Section3 = () => {
     <main className="mt-[120px]">
       <div className="text-center gap-11">
         <div>
-          <h1 className="text-[20px] lg:text-[48px] my-120px  font-semibold mb-[20px]">
+          <h1 className="text-[20px] lg:text-[48px] my-120px font-semibold mb-[20px]">
             TESTIMONIAL
           </h1>
         </div>
@@ -67,9 +67,9 @@ const Section3 = () => {
             >
               “I was in a severe depressive state before I received help from
               Mastermind Recovery and out of work for over a year. With their
-              help my depression has not been as bad. My mental health has been
+              help, my depression has not been as bad. My mental health has been
               a lot better than what it was and moving to San Antonio and
-              getting help from Mastermind was the best decisions for us!”
+              getting help from Mastermind was the best decision for us!”
             </p>
           </div>
         </div>
@@ -78,12 +78,17 @@ const Section3 = () => {
           className="relative mx-auto max-w-[352px] lg:max-w-[1300px]"
           ref={imageRef}
         >
-          <div className="rounded-xl overflow-hidden lg:h-[418px] lg:object-contain">
+          <div className="rounded-xl overflow-hidden lg:h-[418px] lg:object-contain relative">
             <Image
               src={happymotherandchild}
               alt="happy mother and child"
-              className="rounded-xl lg:object-cover inset-full"
+              className="rounded-xl lg:object-cover inset-full filter blur-lg"
             />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <p className="text-white text-[20px] lg:text-[40px] font-bold">
+                INSERT VIDEO HERE
+              </p>
+            </div>
           </div>
         </div>
       </div>
