@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
         id='Herotitle'
         className={`${bricolage.className} lg:text-[100px] leading-[115%] w-full lg:max-w-[940px] text-[48px] font-bold`}
       >
-        Empowering <span className='text-[#00CC57] lg:max-w-[864px] w-fit'>Women & Children</span>
+        Empowering <span className='text-[#00CC57] lg:max-w-[864px] w-fit'>Women & their Children</span>
       </h1>
       <p
         ref={heroTextRef}

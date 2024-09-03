@@ -14,7 +14,7 @@ const Holistic = () => {
           Mastermind is committed to the quality care of women and children, and
           we want to see other women and children experience positive
           self-growth in all areas of life. Although Mastermind is faith-based,
-          we do offer a purely secular track for all other services excluding
+          we offer a purely secular track for all other services excluding
           spiritual. Spiritual services are there for those who choose to use
           them, but they are not a requirement to be approved for our women and
           children’s transitional housing.

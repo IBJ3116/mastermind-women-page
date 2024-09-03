@@ -15,7 +15,10 @@ const Section2: React.FC = () => {
   return (
     <main className="relative mt-[140px] mx-auto max-w-[352px] lg:max-w-[1301px] lg:px-4">
       {/* Section 1 */}
-      <div ref={sectionRef1} className="lg:flex mx-auto lg:mx-auto section2-element-1">
+      <div
+        ref={sectionRef1}
+        className="lg:flex mx-auto lg:mx-auto section2-element-1"
+      >
         <div className="lg:w-1/2 flex flex-col justify-center">
           <div className="block lg:hidden w-[352px] lg:w-[614px]">
             {/* Image for mobile view */}
@@ -28,7 +31,9 @@ const Section2: React.FC = () => {
               />
             </div>
           </div>
-          <div className="mb-[20px] lg:mb-[40px]"> {/* Adjust margin-bottom as needed */}
+          <div className="mb-[20px] lg:mb-[40px]">
+            {" "}
+            {/* Adjust margin-bottom as needed */}
             <h1
               className="text-[32px] lg:text-[64px] max-w-[372px] lg:max-w-[800px] text-start font-bold mb-4"
               id="section2head"
@@ -46,10 +51,11 @@ const Section2: React.FC = () => {
               starvation, women’s health and wellness, and children’s mental and
               physical health are all important issues that affect the future of
               this special population. Our growing team currently consists of a
-              board-certified child psychiatrist, a female case manager, and a
-              female recovery coach. They work together to create a unique
-              program that aims to meet the specialized needs of the women and
-              children at MMR.
+              board-certified child and adolescent psychiatrist, addiction
+              psychiatrist, therapists, case managers, licensed chemical
+              dependency counselors, recovery coaches, pastors, and other
+              compassionate individuals who want to offer all the help there is
+              for women and their children.
             </p>
           </div>
 
@@ -59,7 +65,9 @@ const Section2: React.FC = () => {
         </div>
         <div className="lg:flex hidden w-[614px]">
           {/* Image for desktop view */}
-          <div className="relative w-full h-[572px] rounded-3xl overflow-hidden lg:ml-[20px]"> {/* Adjust margin-left as needed */}
+          <div className="relative w-full h-[572px] rounded-3xl overflow-hidden lg:ml-[20px]">
+            {" "}
+            {/* Adjust margin-left as needed */}
             <Image
               src={section2img}
               alt="Section 2"
@@ -70,7 +78,10 @@ const Section2: React.FC = () => {
         </div>
       </div>
       {/* Section 2 */}
-      <div ref={sectionRef2} className="block lg:flex mx-auto mt-[140px] section2-element-2">
+      <div
+        ref={sectionRef2}
+        className="block lg:flex mx-auto mt-[140px] section2-element-2"
+      >
         <div className="block w-[352px] lg:w-[614px]">
           {/* Image for mobile and desktop view */}
           <div className="relative w-[355px] lg:w-full h-[331px] mb-3 lg:h-[572px] rounded-3xl overflow-hidden">
@@ -82,8 +93,12 @@ const Section2: React.FC = () => {
             />
           </div>
         </div>
-        <div className="lg:w-1/2 flex flex-col justify-center lg:ml-[60px] lg:pl-[20px]"> {/* Adjust margin-left and padding-left as needed */}
-          <div className="mb-[20px] lg:mb-[40px]"> {/* Adjust margin-bottom as needed */}
+        <div className="lg:w-1/2 flex flex-col justify-center lg:ml-[60px] lg:pl-[20px]">
+          {" "}
+          {/* Adjust margin-left and padding-left as needed */}
+          <div className="mb-[20px] lg:mb-[40px]">
+            {" "}
+            {/* Adjust margin-bottom as needed */}
             <h1
               className="text-[32px] lg:text-[64px] max-w-[362px] lg:max-w-[852px] text-start font-bold mb-4"
               id="section2head"
@@ -92,10 +107,10 @@ const Section2: React.FC = () => {
               Transitional Housing for Women and Children
             </h1>
             <p className="text-[14px] mx-auto lg:text-[22px] leading-normal mb-4 max-w-[352px] lg:max-w-[635px]">
-              In 2024, MMR will be opening a transitional living house for Women
-              and their Children. This unique house provides women in recovery a
-              chance to raise their children in a safe, serene and supervised
-              sober environment.
+              MMR provides stability for mothers and their babies in
+              transitional living houses. These unique houses provide women in
+              recovery and chance to raise their children in a safe, serene,
+              supervised and family-friendly sober environment”
             </p>
           </div>
           <div className="lg:w-[195px] lg:h-[74px] w-[121px] h-[45px] rounded-full bg-green-500 flex items-center justify-center mb-22">

@@ -27,7 +27,7 @@ const sponsortable = [
   {
     id: "06",
     item: "One month rent",
-    cost: "$650",
+    cost: "$800",
   },
   {
     id: "07",

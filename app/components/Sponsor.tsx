@@ -7,7 +7,7 @@ const Sponsor = () => {
     <main className="mx-auto w-full mt-[80px]">
       <div className="text-center">
         <h1 className="mx-auto text-[32px] lg:text-[64px] font-bold leading-none lg:max-w-[1028px]">
-          Be A Sponsor
+          Be a Sponsor
         </h1>
         <p className="max-w-[352px] lg:max-w-[1181px] mx-auto text-[14px] lg:text-[24px] mt-[20px]">
           Help a woman and her baby live an easier life of recovery

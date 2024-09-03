@@ -27,10 +27,9 @@ const Section4 = () => {
           Progress
         </h1>
         <p className="max-w-[352px] mx-auto mt-[20px] text-[14px] lg:text-[24px] lg:max-w-[1024px]">
-          Debra has been receiving follow up care from MMR for over 6 months now.
-          Debras extensive evaluation results done (in 90 day increments) by our
-          case managers and overseen by our board certified psychiatrist
-          are below:
+          Debra has been receiving a variety of services from MMR since July,
+          2023. Her second extensive evaluation results done (in 90-day
+          increments) by our case managers are below:
         </p>
       </div>
 
