@@ -55,7 +55,7 @@ const Section3 = () => {
               className="text-[32px] lg:text-[64px] mb-[20px] font-semibold"
               ref={headingRef}
             >
-              <ItalicText id="name">I’m Debra</ItalicText>, 34 years old, Mother
+              <ItalicText id="name">I’m Debra</ItalicText>, Mother
               of Two
             </h1>
           </div>

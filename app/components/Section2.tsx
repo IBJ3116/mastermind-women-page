@@ -13,7 +13,7 @@ const Section2: React.FC = () => {
   useGsapAnimations(".section2-element-2");
 
   return (
-    <main className="relative mt-[140px] mx-auto max-w-[352px] lg:max-w-[1301px] lg:px-4">
+    <main className="relative mt-[120px] mx-auto max-w-[352px] lg:max-w-[1301px] lg:px-4">
       {/* Section 1 */}
       <div
         ref={sectionRef1}
