@@ -17,25 +17,21 @@ const Section3 = () => {
 
   useEffect(() => {
     const tl = gsap.timeline({
-      defaults: { duration: 1, ease: 'power3.out' },
+      defaults: { duration: 1, ease: "power3.out" },
     });
 
-    tl.fromTo(
-      headingRef.current,
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0 }
-    )
+    tl.fromTo(headingRef.current, { opacity: 0, y: 50 }, { opacity: 1, y: 0 })
       .fromTo(
         paragraphRef.current,
         { opacity: 0, y: 50 },
         { opacity: 1, y: 0 },
-        '-=0.5'
+        "-=0.5"
       )
       .fromTo(
         imageRef.current,
         { opacity: 0, y: 50 },
         { opacity: 1, y: 0 },
-        '-=0.5'
+        "-=0.5"
       );
   }, []);
 
@@ -55,8 +51,7 @@ const Section3 = () => {
               className="text-[32px] lg:text-[64px] mb-[20px] font-semibold"
               ref={headingRef}
             >
-              <ItalicText id="name">I’m Debra</ItalicText>, Mother
-              of Two
+              <ItalicText id="name">I’m Debra</ItalicText>, Mother of Two
             </h1>
           </div>
 
@@ -82,13 +77,8 @@ const Section3 = () => {
             <Image
               src={happymotherandchild}
               alt="happy mother and child"
-              className="rounded-xl lg:object-cover inset-full filter blur-lg"
+              className="rounded-xl lg:object-cover inset-full"
             />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <p className="text-white text-[20px] lg:text-[40px] font-bold">
-                INSERT VIDEO HERE
-              </p>
-            </div>
           </div>
         </div>
       </div>

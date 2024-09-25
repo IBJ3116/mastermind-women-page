@@ -50,19 +50,19 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <main className='relative flex flex-col justify-center items-center h-screen text-center px-4'>
+    <main className='relative flex flex-col justify-center items-center h-[90vh] pt-[50px] lg:pt-[80px] text-center px-4'>
       <h1
         ref={heroTitleRef}
         id='Herotitle'
-        className={`${bricolage.className} lg:text-[72px] leading-[115%] lg:w-[1000px] w-[380px] text-[35px] font-bold`}
+        className={`${bricolage.className} lg:text-[100px] leading-[115%] lg:w-[1000px] w-[380px] text-[42px] font-bold`}
       >
-        Empowering <span className='text-[#00CC57]'>Women & their Children are not a Forgotten Breed</span>
+        Empowering <span className='text-[#00CC57]'>Women & their Children</span>
       </h1>
       <p
         ref={heroTextRef}
         className='max-w-[363px] lg:max-w-[1000px] text-[14px] lg:text-[24px] mb-[20px] mt-[20px]'
       >
-        Single mothers are not a forgotten breed at MMR. With combined efforts, you can help us lead women and children to eventually live a self-reliant lifestyle.
+        Women and thier children are not a forgotten breed at MMR. With combined efforts, you can help us lead women and children to eventually live a self-reliant lifestyle.
       </p>
       <div
         ref={heroButtonRef}
