@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
         ref={heroTextRef}
         className='max-w-[363px] lg:max-w-[1000px] text-[14px] lg:text-[24px] mb-[20px] mt-[20px]'
       >
-        Women and thier children are not a forgotten breed at MMR. Our efforts are geared towards empowering not just mothers, but also their children. We utilize leaders and mentors with lived experiences who are motivated to do what it takes to build the women and children in our program.
+        Women and thier children are not a forgotten demographic at MMR. Our efforts are geared towards empowering not just mothers, but also their children. We utilize leaders and mentors with lived experiences who are motivated to do what it takes to build the women and children in our program.
       </p>
       <div
         ref={heroButtonRef}
