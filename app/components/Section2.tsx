@@ -110,7 +110,7 @@ const Section2: React.FC = () => {
               MMR provides stability for mothers and their babies in
               transitional living houses. These unique houses provide women in
               recovery and chance to raise their children in a safe, serene,
-              supervised and family-friendly sober environment”
+              supervised and family-friendly sober environment.
             </p>
           </div>
           <div className="lg:w-[195px] lg:h-[74px] w-[121px] h-[45px] rounded-full bg-green-500 flex items-center justify-center mb-22">
